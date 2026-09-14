@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Primary Customer Portal Landing -->
+    <url>
+        <loc>https://customer.asbfashion.com/</loc>
+        <lastmod>2026-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.00</priority>
+        <image:image>
+            <image:loc>https://customer.asbfashion.com/assets/images/og-main-banner.jpg</image:loc>
+            <image:title>ASB Fashion Customer Portal &amp; Loyal Vault</image:title>
+        </image:image>
+    </url>
+
+    <!-- Secure Customer Login -->
+    <url>
+        <loc>https://customer.asbfashion.com/login.php</loc>
+        <lastmod>2026-08-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- ASB Glamour Gate VIP Loyalty Section -->
+    <url>
+        <loc>https://customer.asbfashion.com/#glamour-gate</loc>
+        <lastmod>2026-08-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- ASB Loyal Vault Rewards Directory -->
+    <url>
+        <loc>https://customer.asbfashion.com/#loyal-vault</loc>
+        <lastmod>2026-08-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+</urlset>

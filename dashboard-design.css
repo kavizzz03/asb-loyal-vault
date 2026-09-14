@@ -1,0 +1,590 @@
+:root {
+    --bg-main: #f8fafc;
+    --midnight-primary: #0f172a;
+    --midnight-darker: #020617;
+    --crimson-accent: #e11d48;
+    --crimson-hover: #b91c1c;
+    --border-light: #e2e8f0;
+    --text-slate: #334155;
+    --text-muted: #64748b;
+    --radius-premium: 12px;
+}
+
+/* 1. Global Reset Infrastructure */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-main);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--midnight-primary);
+    -webkit-font-smoothing: antialiased;
+}
+
+.dashboard-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* 2. Premium Navbar Architecture */
+.navbar-premium {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--midnight-primary);
+    padding: 1.25rem 2rem;
+    border-radius: var(--radius-premium);
+    box-shadow: 0 10px 25px -5px rgba(2, 6, 23, 0.3);
+    margin-bottom: 2rem;
+}
+
+.brand-cluster {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.brand-logo-img {
+    height: 42px;
+    width: auto;
+}
+
+.brand-title-main {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.brand-title-main span {
+    color: var(--crimson-accent);
+}
+
+.brand-subtitle-sub {
+    color: #94a3b8;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.brand-subtitle-sub em {
+    font-family: 'Playfair Display', serif;
+    text-transform: lowercase;
+    font-style: italic;
+    color: #f1f5f9;
+}
+
+.user-action-cluster {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.welcome-back-text {
+    text-align: right;
+}
+
+.welcome-back-text p {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.welcome-back-text h4 {
+    margin: 2px 0 0 0;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.logout-action-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logout-action-pill:hover {
+    background: var(--crimson-accent);
+    border-color: var(--crimson-accent);
+}
+
+/* 3. Operational System Banners */
+.system-error-banner {
+    background: #fef2f2;
+    border: 1px solid #fee2e2;
+    color: #991b1b;
+    padding: 1rem;
+    border-radius: var(--radius-premium);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* 4. Metrics Grid Component Layouts */
+.metrics-panel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.premium-card {
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-premium);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.metric-data-card {
+    padding: 24px;
+}
+
+.metric-card-light {
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+}
+
+.metric-card-dark {
+    background: var(--midnight-primary);
+    border: 1px solid #1e293b;
+}
+
+.metric-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.metric-card-title {
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.metric-card-title-dark {
+    color: #94a3b8;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.metric-icon-earned { color: var(--crimson-accent); font-size: 1.1rem; }
+.metric-icon-redeemed { color: #475569; font-size: 1.1rem; }
+.metric-icon-available { color: var(--crimson-accent); font-size: 1.1rem; }
+
+.metric-card-value {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.value-dark { color: var(--midnight-primary); }
+.value-light { color: #ffffff; }
+
+.metric-card-footer {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 8px;
+}
+
+.metric-card-footer-dark {
+    font-size: 11px;
+    color: var(--crimson-accent);
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+/* 5. Analytics Distribution Blocks */
+.split-analytics-row {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 968px) {
+    .split-analytics-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-padded-box {
+    padding: 24px;
+}
+
+.component-title-header {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--midnight-primary);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.component-title-header i {
+    color: var(--crimson-accent);
+}
+
+.chart-rendering-canvas {
+    position: relative;
+    height: 250px;
+}
+
+/* 6. Profile Serialization Data Tables */
+.profile-table-array {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-row-item {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    padding: 14px 0;
+    border-bottom: 1px solid #f1f5f9;
+    align-items: center;
+}
+
+.profile-row-item.no-border {
+    border-bottom: none;
+}
+
+.profile-row-label {
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-row-label i {
+    width: 16px;
+    color: #94a3b8;
+}
+
+.profile-row-value {
+    color: var(--text-slate);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.profile-row-value-bold {
+    color: var(--midnight-primary);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.text-small-lh {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.edit-trigger-btn {
+    width: 100%;
+    margin-top: 1.5rem;
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--text-slate);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.edit-trigger-btn:hover {
+    background: var(--midnight-primary);
+    color: #ffffff;
+    border-color: var(--midnight-primary);
+}
+
+/* 7. Loyalty Privileges Grid */
+.container-margin-y {
+    margin: 1.5rem 0;
+}
+
+.privileges-grid-system {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.privilege-node {
+    background: #fafafa;
+    border: 1px solid var(--border-light);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.privilege-icon-shield {
+    width: 40px;
+    height: 40px;
+    background: rgba(225, 29, 72, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--crimson-accent);
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.privilege-node h4 {
+    margin: 0 0 6px 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.privilege-node p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* 8. Modern Glassmorphic Overlay Modals */
+.vault-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 6, 23, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 1rem;
+}
+
+.vault-modal-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 650px;
+    border-radius: var(--radius-premium);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    animation: modalReveal 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalReveal {
+    from { transform: translateY(15px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.vault-modal-header {
+    background: var(--midnight-primary);
+    color: #ffffff;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vault-modal-header h5 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.close-icon-trigger {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.close-icon-trigger:hover { opacity: 1; }
+
+.vault-modal-body {
+    padding: 1.5rem;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+@media (max-width: 520px) {
+    .modal-grid { grid-template-columns: 1fr; }
+    .modal-field-full { grid-column: span 1 !important; }
+}
+
+.modal-field-full {
+    grid-column: span 2;
+}
+
+.vault-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.vault-input-group label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.vault-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    color: var(--midnight-primary);
+    background: #ffffff;
+    transition: border-color 0.2s;
+}
+
+.vault-input:focus {
+    outline: none;
+    border-color: var(--crimson-accent);
+}
+
+.vault-input[readonly] {
+    background: #f1f5f9;
+    color: var(--text-muted);
+    cursor: not-allowed;
+}
+
+.vault-modal-footer {
+    background: #f8fafc;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    border-top: 1px solid var(--border-light);
+}
+
+.btn-vault-action {
+    padding: 0.65rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.2s;
+}
+
+.btn-vault-close {
+    background: transparent;
+    border: 1px solid var(--border-light);
+    color: var(--text-slate);
+}
+
+.btn-vault-close:hover { background: #f1f5f9; }
+
+.btn-vault-save {
+    background: var(--crimson-accent);
+    border: 1px solid var(--crimson-accent);
+    color: #ffffff;
+}
+
+.btn-vault-save:hover { background: var(--crimson-hover); border-color: var(--crimson-hover); }
+.btn-vault-save:disabled { background: #cbd5e1; border-color: #cbd5e1; cursor: not-allowed; }
+
+/* 9. Alerts System Controls */
+.alert-danger {
+    background: #fef2f2;
+    border: 1px solid #fee2e2;
+    color: #991b1b;
+    padding: 0.85rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    line-height: 1.4;
+}
+
+.d-none { display: none !important; }
+
+/* 10. System Notification Micro-Toasts */
+.system-toast-alert {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--midnight-darker);
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+    z-index: 100000;
+    border-left: 4px solid var(--crimson-accent);
+}
+
+.system-toast-alert.trigger-show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* 11. Core Institutional Branding Footers */
+.system-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-light);
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.system-footer-container p { margin: 0; }
+
+.developer-signature-badge {
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: var(--text-slate);
+    display: flex;
+    align-items: center;
+}
+
+.developer-signature-badge i {
+    color: var(--crimson-accent);
+    margin-right: 6px;
+}

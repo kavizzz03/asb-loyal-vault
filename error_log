@@ -1,0 +1,73 @@
+[02-Jun-2026 23:46:33 America/Chicago] PHP Parse error:  Unclosed '{' on line 45 in /home/asbfash2/customer.asbfashion.com/config.php on line 76
+[02-Jun-2026 23:46:34 America/Chicago] PHP Parse error:  Unclosed '{' on line 45 in /home/asbfash2/customer.asbfashion.com/config.php on line 76
+[02-Jun-2026 23:54:02 America/Chicago] PHP Parse error:  Unclosed '{' on line 45 in /home/asbfash2/customer.asbfashion.com/config.php on line 76
+[02-Jun-2026 23:54:04 America/Chicago] PHP Parse error:  Unclosed '{' on line 45 in /home/asbfash2/customer.asbfashion.com/config.php on line 76
+[02-Jun-2026 23:54:06 America/Chicago] PHP Parse error:  Unclosed '{' on line 45 in /home/asbfash2/customer.asbfashion.com/config.php on line 76
+[02-Jun-2026 23:55:26 America/Chicago] PHP Parse error:  Unclosed '{' on line 45 in /home/asbfash2/customer.asbfashion.com/config.php on line 76
+[02-Jun-2026 23:56:22 America/Chicago] PHP Parse error:  Unclosed '{' on line 45 in /home/asbfash2/customer.asbfashion.com/config.php on line 76
+[02-Jun-2026 23:56:23 America/Chicago] PHP Parse error:  Unclosed '{' on line 45 in /home/asbfash2/customer.asbfashion.com/config.php on line 76
+[02-Jun-2026 23:57:01 America/Chicago] PHP Parse error:  Unclosed '{' on line 45 in /home/asbfash2/customer.asbfashion.com/config.php on line 76
+[09-Jun-2026 23:01:20 America/Chicago] PHP Parse error:  syntax error, unexpected token "=", expecting "]" in /home/asbfash2/customer.asbfashion.com/config.php on line 61
+[09-Jun-2026 23:01:21 America/Chicago] PHP Parse error:  syntax error, unexpected token "=", expecting "]" in /home/asbfash2/customer.asbfashion.com/config.php on line 61
+[15-Jun-2026 02:16:27 America/Chicago] PHP Warning:  Undefined variable $conn in /home/asbfash2/customer.asbfashion.com/update_customer.php on line 24
+[15-Jun-2026 02:16:27 America/Chicago] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #1 ($mysql) must be of type mysqli, null given in /home/asbfash2/customer.asbfashion.com/update_customer.php:24
+Stack trace:
+#0 /home/asbfash2/customer.asbfashion.com/update_customer.php(24): mysqli_real_escape_string(NULL, '018002532')
+#1 {main}
+  thrown in /home/asbfash2/customer.asbfashion.com/update_customer.php on line 24
+[15-Jun-2026 02:16:45 America/Chicago] PHP Warning:  Undefined variable $conn in /home/asbfash2/customer.asbfashion.com/update_customer.php on line 24
+[15-Jun-2026 02:16:45 America/Chicago] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #1 ($mysql) must be of type mysqli, null given in /home/asbfash2/customer.asbfashion.com/update_customer.php:24
+Stack trace:
+#0 /home/asbfash2/customer.asbfashion.com/update_customer.php(24): mysqli_real_escape_string(NULL, '018002532')
+#1 {main}
+  thrown in /home/asbfash2/customer.asbfashion.com/update_customer.php on line 24
+[15-Jun-2026 02:19:17 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/asbfash2/customer.asbfashion.com/update_customer.php on line 7
+[15-Jun-2026 02:19:17 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asbfash2/customer.asbfashion.com/update_customer.php:7) in /home/asbfash2/customer.asbfashion.com/update_customer.php on line 10
+[15-Jun-2026 02:19:17 America/Chicago] === UPDATE_CUSTOMER.PHP CALLED ===
+[15-Jun-2026 02:19:17 America/Chicago] REQUEST METHOD: POST
+[15-Jun-2026 02:19:17 America/Chicago] SESSION DATA: Array
+(
+    [authenticated_user] => 1
+    [customer_profile] => Array
+        (
+            [CM_CODE] => 018002532
+            [CM_OPENINGPOINTS] => 502
+            [CM_TITLE] => M/S
+            [CM_NAME] => G.K. KANNANGARA
+            [CM_NIC] => 816550785
+            [CM_MOBILE] => 0740890730
+            [CM_DOB] => 1981-06-03
+            [CM_EMAIL] => 
+            [CM_POINTS] => 0
+            [CM_ADD1] => NO . 208
+            [CM_ADD2] => MIHIRIYA POKIRA, KOMMALA
+            [CM_ADD3] => BENTHOTA
+            [CM_ADD4] => 
+            [POINTS_ADDED] => 11587
+            [POINTS_DEDUCTED] => 9492
+            [POINTS_AVAILABLE] => 0
+            [OPENING_POINTS] => 502
+            [TRANSACTION_POINTS_ADDED] => 11085
+        )
+
+    [user_id] => 9
+)
+
+[15-Jun-2026 02:19:17 America/Chicago] RAW INPUT: {"CM_CODE":"018002532","CM_NAME":"G.K. KANNANGARA","CM_NIC":"816550785","CM_DOB":"1981-06-03","CM_EMAIL":"test@mail.com","CM_ADD1":"NO . 208","CM_ADD2":"MIHIRIYA POKIRA, KOMMALA","CM_ADD3":"BENTHOTA","CM_ADD4":""}
+[15-Jun-2026 02:19:17 America/Chicago] PARSED INPUT: Array
+(
+    [CM_CODE] => 018002532
+    [CM_NAME] => G.K. KANNANGARA
+    [CM_NIC] => 816550785
+    [CM_DOB] => 1981-06-03
+    [CM_EMAIL] => test@mail.com
+    [CM_ADD1] => NO . 208
+    [CM_ADD2] => MIHIRIYA POKIRA, KOMMALA
+    [CM_ADD3] => BENTHOTA
+    [CM_ADD4] => 
+)
+
+[15-Jun-2026 02:19:17 America/Chicago] ERROR: Database connection failed
+[15-Jun-2026 03:07:43 America/Chicago] PHP Warning:  Undefined variable $earned in /home/asbfash2/customer.asbfashion.com/dashboard.php on line 805
+[15-Jun-2026 03:07:43 America/Chicago] PHP Warning:  Undefined variable $redeemed in /home/asbfash2/customer.asbfashion.com/dashboard.php on line 806
+[15-Jun-2026 03:07:43 America/Chicago] PHP Warning:  Undefined variable $available in /home/asbfash2/customer.asbfashion.com/dashboard.php on line 807

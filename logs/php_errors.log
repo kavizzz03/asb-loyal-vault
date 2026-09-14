@@ -1,0 +1,3 @@
+[10-Jun-2026 11:44:40 Asia/Colombo] PHP Fatal error:  Cannot redeclare formatMobileSriLanka() (previously declared in /home/asbfash2/customer.asbfashion.com/login.php:140) in /home/asbfash2/customer.asbfashion.com/config.php on line 32
+[10-Jun-2026 11:45:03 Asia/Colombo] PHP Fatal error:  Cannot redeclare formatMobileSriLanka() (previously declared in /home/asbfash2/customer.asbfashion.com/login.php:140) in /home/asbfash2/customer.asbfashion.com/config.php on line 32
+[10-Jun-2026 11:46:39 Asia/Colombo] PHP Fatal error:  Cannot redeclare formatMobileSriLanka() (previously declared in /home/asbfash2/customer.asbfashion.com/login.php:59) in /home/asbfash2/customer.asbfashion.com/config.php on line 32
