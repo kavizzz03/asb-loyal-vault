@@ -1,0 +1,42 @@
+PROPRIETARY SOFTWARE LICENSE & INTELLECTUAL PROPERTY AGREEMENT
+Effective Years: 2026 – 2027
+
+Copyright (c) 2026-2027 Kavindu Bogahawatte & Vexel IT. All Rights Reserved.
+
+AUTHORS & DEVELOPERS: Kavindu Bogahawatte & Vexel IT
+AUTHORITATIVE MAINTAINER: kavizzn@gmail.com
+
+--------------------------------------------------------------------------------
+1. INTELLECTUAL PROPERTY & OWNERSHIP RIGHTS
+The source code, architecture, database schemas, user interface designs, and 
+associated documentation of this software project are the exclusive 
+intellectual property of Kavindu Bogahawatte and Vexel IT. This Agreement does 
+not transfer ownership of any intellectual property rights to any third party.
+
+2. RESTRICTION ON MODIFICATION AND DERIVATIVE WORKS
+No person, entity, or organization is permitted to edit, alter, refactor, 
+decompile, reverse-engineer, modify, or create derivative works of this codebase 
+without explicit written authorization. 
+
+AUTHORIZATION RESTRICTION: Exclusive authority to alter, release updates, 
+merge code commits, or publish modifications is restricted strictly to the 
+primary maintainer reachable at: kavizzn@gmail.com.
+
+3. PROPRIETARY USE & DISTRIBUTION LIMITATIONS
+Under no circumstances may this source code—in whole or in part—be sublicensed, 
+resold, leased, published, mirrored, or redistributed publicly or privately to 
+any third party without written permission from the copyright holders.
+
+4. CONFIDENTIALITY & TRADE SECRETS
+The underlying architecture, backend APIs, logic, and data structures constitute 
+proprietary trade secrets of Kavindu Bogahawatte and Vexel IT. All unauthorized 
+inspection, extraction, or dissemination of the code is strictly prohibited.
+
+5. DISCLAIMER OF WARRANTY & LIMITATION OF LIABILITY
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS 
+FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS 
+OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, 
+WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR 
+IN CONNECTION WITH THE SOFTWARE OR THE USE OF IT.
+--------------------------------------------------------------------------------
